@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-black  md:pr-20 md:pl-20 flex justify-center  ">
+  <div class="container  mt-2 h-full w-full flex ">
+    <nav
+      class="h-4/5 flex flex-col items-center list-none bg-black md:w-60  text-xl text-white border-[1px] border-black  sticky top-0">
+      <ul class="flex flex-col gap-6 w-10 md:w-60 sticky top-0">
+
+        <li class="flex items-center "><img src="Logo.svg" class="h-7" alt="Logo"></li>
+        <li class="flex items-center font-bold hover:bg-slate-400"><img src="home.svg" class="h-7" alt=""> <span
+            class="hidden md:block">Home</span></li>
+        <li class="flex items-center"><img src="search.svg" class="h-7" alt=""><span
+            class="hidden md:block">Explore</span> </li>
+        <li class="flex items-center"><img src="message.svg" class="h-7" alt=""><span
+            class="hidden md:block">Messages</span></li>
+        <li class="flex items-center"><img src="notification.svg" class="h-7" alt=""><span
+            class="hidden md:block">Notifications</span>
+        </li>
+        <li class="flex items-center"><img src="Grok.svg" class="h-7" alt=""><span class="hidden md:block">Grok</span>
+        </li>
+        <li class="flex items-center"><img src="communites.svg" class="h-7" alt=""><span
+            class="hidden md:block">Communities</span> </li>
+        <li class="flex items-center"><img src="profile.svg" class="h-7" alt=""><span
+            class="hidden md:block">Profile</span> </li>
+        <li class="flex items-center"><img src="more.svg" class="h-7" alt=""><span class="hidden md:block">More</span>
+        </li>
+        <li class="block md:hidden pr-3">
+          <div class="bg-[#0ea5e9] rounded-3xl h-7 flex justify-center items-center"><svg class="h-5"
+              xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" aria-hidden="true"
+              class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1472mwg r-lrsllp"
+              style="color: rgb(255, 255, 255);">
+              <g>
+                <path
+                  d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z">
+                </path>
+              </g>
+            </svg></div>
+        </li>
+        <input type="button"
+          class="pt-3 pb-3 w-60 rounded-full text-center bg-[#0ea5e9] mr-10 font-bold hidden md:block" value="Post">
+
+        <li class="flex items-center gap-3 mr-4 text-base mt-6"><img
+            src="https://avatars.githubusercontent.com/u/124515121?v=4&size=64" class="h-10 w-10 rounded-full" alt="">
+          <div class="flex flex-col"><span class="font-bold hidden md:block">Parth Mishra</span> <span
+              class="hidden md:block">@Owner</span></div> <img src="3dot.svg" class=" md:ml-8 md:h-6 hidden md:block"
+            alt="">
+        </li>
+      </ul>
+
+    </nav>
+    <!-- Container 2 -->
+    <div class="container2 w-[144%] border-[1px] border-black border-r-slate-500 border-l-slate-500 h-full ">
+
+      <div
+        class="flex justify-around bg-black text-white h-14 border-[1px] border-black border-b-slate-500 font-bold sticky top-0">
+        <input type="button" value="For you">
+        <input type="button" value="Following">
+
+      </div>
+
+      <div class="h-4/5">
+
+
+        <!-- Search -->
+        <div class="flex p-5 gap-5">
+          <img src="https://avatars.githubusercontent.com/u/124515121?v=4&size=64" class="h-10 rounded-full" alt="">
+          <textarea type="text" class="w-5/6 h-14  outline-none text-xl bg-black text-white"
+            placeholder="What is happening?!"></textarea>
+        </div>
+
+        <div class="flex gap-2 pl-20 pb-5">
+          <span><img src="image.svg" alt="" class="h-5"></span>
+          <span><img src="gif.svg" alt="" class="h-5"></span>
+          <span><img src="poll.svg" alt="" class="h-5"></span>
+          <span><img src="emoji.svg" alt="" class="h-5"></span>
+          <span><img src="calender.svg" alt="" class="h-5"></span>
+          <span><img src="location.svg" alt="" class="h-5"></span>
+        </div>
+
+        <div class="border-[1px] border-black border-b-slate-500  border-t-slate-500 pt-4
+      pb-4 text-[#0ea5e9] text-center">
+          Show 35 posts
+        </div>
+
+        <!-- posts -->
+        <div class="flex flex-col overflow-hidden">
+          <!-- 1 posts -->
+
+          <div class="pb-5 border-[1px] border-black border-b-slate-500">
+
+            <div class="flex pt-5 pl-5 pr-5 text-white gap-1">
+              <img src="https://avatars.githubusercontent.com/u/124515121?v=4&size=64" class="h-10 rounded-full" alt="">
+              <span class="font-bold pl-2">Owner</span><img src="BlueTic.svg" class="h-5" alt=""><span
+                class="text-slate-500">@owner . 1h</span>
+            </div>
+            <div class="pl-16">
+              <span class="text-white">
+                #ફોરેસ્ટ બીટ ગાર્ડ નાં #ફિઝિકલ_પરીક્ષા આપનાર ઉમેદવાર ને હાઈટ(ઊંચાઈ) માં નાપાસ કરતા કોર્ટ સમક્ષ દાદ
+                માંગવામાં
+                આવેલ.
+
+                📌નામદાર હાઇકોર્ટે દ્વારા દાદ માંગનાર ઉમેદવારો ને રાહત આપતા
+                #રિટેસ્ટ (મેડિકલ ઓફિસર સામે) કરાવવાનું કહ્યું છે.
+
+                📌 18 નવેમ્બર પહેલા #રીમેજરમેન્ટ કરાવવાનું રહશે.
+              </span>
+            </div>
+            <!-- icons -->
+            <div class="pl-16 pt-10 text-white flex">
+              <div class="flex gap-10 list-none">
+
+                <li class="flex items-center"><img src="comment.svg" class="h-5" alt=""><span>10</span></li>
+                <li class="flex items-center"><img src="repost.svg" class="h-5" alt=""><span>10</span></li>
+                <li class="flex items-center"><img src="like.svg" class="h-5" alt=""><span>10</span></li>
+                <li class="flex items-center"><img src="view.svg" class="h-5" alt=""><span>10</span></li>
+                <li class="flex items-center"><img src="comment.svg" class="h-5" alt=""><span>10</span></li>
+
+              </div>
+              <div class="flex gap-1 pl-20">
+                <li class="flex items-center"><img src="Bookmark.svg" class="h-5" alt=""></li>
+                <li class="flex items-center"><img src="share.svg" class="h-5" alt=""></li>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 posts -->
+
+          <div class="pb-5 border-[1px] border-black border-b-slate-500">
+
+            <div class="flex pt-5 pl-5 pr-5 text-white gap-1">
+              <img src="https://avatars.githubusercontent.com/u/124515121?v=4&size=64" class="h-10 rounded-full" alt="">
+              <span class="font-bold pl-2">Owner</span><img src="BlueTic.svg" class="h-5" alt=""><span
+                class="text-slate-500">@owner . 1h</span>
+            </div>
+            <div class="pl-16">
+              <span class="text-white">
+                ઘરેણા, રોકડ અને કપડા... મુસ્લિમ દીકરાના લગ્નમાં પ્રજાપતિ પરિવારે ભર્યું 4 લાખનું મામેરું, મહેસાણાના
+                નંદાસણમાં કોમી એકતાના તોરણ બંધાયા
+
+                #mehsana #muslimfamily #marriage #viral #viralvideo #trending #trendingvideo #gujarat #zee24kalak
+              </span>
+              <div class="flex justify-center border border-white rounded-lg p-2 mt-3">
+                <video src="video.mp4" class="w-72 " controls></video>
+              </div>
+            </div>
+            <!-- icons -->
+            <div class="pl-16 pt-10 text-white flex">
+              <div class="flex gap-10 list-none">
+
+                <li class="flex items-center"><img src="comment.svg" class="h-5" alt=""><span>10</span></li>
+                <li class="flex items-center"><img src="repost.svg" class="h-5" alt=""><span>10</span></li>
+                <li class="flex items-center"><img src="like.svg" class="h-5" alt=""><span>10</span></li>
+                <li class="flex items-center"><img src="view.svg" class="h-5" alt=""><span>10</span></li>
+                <li class="flex items-center"><img src="comment.svg" class="h-5" alt=""><span>10</span></li>
+
+              </div>
+              <div class="flex gap-1 pl-20">
+                <li class="flex items-center"><img src="Bookmark.svg" class="h-5" alt=""></li>
+                <li class="flex items-center"><img src="share.svg" class="h-5" alt=""></li>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 posts -->
+
+          <div class="pb-5 border-[1px] border-black border-b-slate-500">
+
+            <div class="flex pt-5 pl-5 pr-5 text-white gap-1">
+              <img src="https://avatars.githubusercontent.com/u/124515121?v=4&size=64" class="h-10 rounded-full" alt="">
+              <span class="font-bold pl-2">Owner</span><img src="BlueTic.svg" class="h-5" alt=""><span
+                class="text-slate-500">@owner . 1h</span>
+            </div>
+            <div class="pl-16">
+              <span class="text-white">
+                देशवासियों को धनतेरस की ढेरों शुभकामनाएं। भगवान धन्वंतरि के आशीर्वाद से आप सभी का जीवन उत्तम स्वास्थ्य
+                और सुख-संपदा से सदैव परिपूर्ण रहे, यही कामना है।
+              </span>
+            </div>
+            <!-- icons -->
+            <div class="pl-16 pt-10 text-white flex">
+              <div class="flex gap-10 list-none">
+
+                <li class="flex items-center"><img src="comment.svg" class="h-5" alt=""><span>10</span></li>
+                <li class="flex items-center"><img src="repost.svg" class="h-5" alt=""><span>10</span></li>
+                <li class="flex items-center"><img src="like.svg" class="h-5" alt=""><span>10</span></li>
+                <li class="flex items-center"><img src="view.svg" class="h-5" alt=""><span>10</span></li>
+                <li class="flex items-center"><img src="comment.svg" class="h-5" alt=""><span>10</span></li>
+
+              </div>
+              <div class="flex gap-1 pl-20">
+                <li class="flex items-center"><img src="Bookmark.svg" class="h-5" alt=""></li>
+                <li class="flex items-center"><img src="share.svg" class="h-5" alt=""></li>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- Container 3 -->
+    <div class="container3 w-full ml-3 hidden md:block">
+      <!-- Search -->
+      <div class="flex items-center gap-2 h-12 font-bold  bg-[#202327] rounded-3xl mb-5 ">
+        <img src="3Search.svg" alt="Search Icon" class="h-6 pl-3">
+        <input type="text" class=" outline-none  bg-[#202327] text-slate-500" placeholder="Search">
+      </div>
+
+
+
+
+        <div class="flex flex-col p-5 gap-3 border-[1px] border-b-gray-500 rounded-xl text-white ">
+          <h2 class="font-bold text-xl">Subscribe to Premium</h2>
+          <span>Subscribe to unlock new features and if eligible, receive a share of revenue.</span>
+          <input type="button" class="pt-1 pb-1 w-28 rounded-full text-center bg-[#0ea5e9] mr-10 font-bold"
+            value="Subscribe">
+        </div>
+
+        <div class="mt-5 flex flex-col p-5 gap-3 border-[1px] border-b-gray-500 rounded-xl text-white ">
+          <h2 class="font-bold text-xl">What’s happening</h2>
+          <ul class="flex flex-col text-white">
+            <li class="flex flex-col mt-5">
+              <div class="flex justify-between">
+                <span class="text-sm text-slate-500">Entertainment . Trending</span>
+                <img src="3dot.svg" class="h-6" alt="">
+              </div>
+              <span class="font-bold">#Kurkure</span>
+              <div class="text-sm">
+                <span class=" text-slate-500">Trending with </span>
+                <span class="text-blue-500">#ArjunKapoor</span>
+              </div>
+
+            </li>
+
+            <li class="flex flex-col mt-7">
+              <div class="flex justify-between">
+                <span class="text-sm text-slate-500">Entertainment . Trending</span>
+                <img src="3dot.svg" class="h-6" alt="">
+              </div>
+              <span class="font-bold">#Kurkure</span>
+              <div class="text-sm">
+                <span class=" text-slate-500">Trending with </span>
+                <span class="text-blue-500">#ArjunKapoor</span>
+              </div>
+
+            </li>
+            <li class="flex flex-col mt-7 ">
+              <div class="flex justify-between">
+                <span class="text-sm text-slate-500">Entertainment . Trending</span>
+                <img src="3dot.svg" class=" h-6" alt="">
+              </div>
+              <span class="font-bold">#Kurkure</span>
+              <div class="text-sm">
+                <span class=" text-slate-500">Trending with </span>
+                <span class="text-blue-500">#ArjunKapoor</span>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-5 flex flex-col p-5 gap-3 border-[1px] border-b-gray-500 rounded-xl text-white sticky top-[1rem]">
+          <h2 class="font-bold text-xl">Who to Follow</h2>
+
+          <li class="flex items-center gap-3 mr-4 text-base mt-6 justify-between">
+
+            <div class="flex ">
+              <img src="https://avatars.githubusercontent.com/u/124515121?v=4&size=64" class="h-10 rounded-full" alt="">
+              <div class="flex flex-col">
+                <span class="font-bold">Parth Mishra</span>
+                <span>@Owner</span>
+              </div>
+
+            </div>
+
+
+            <input type="button" class="  bg-white text-black font-bold rounded-3xl pl-4 pr-4 pt-2 pb-2" value="Follow">
+
+
+          </li>
+
+          
+          <li class="flex items-center gap-3 mr-4 text-base mt-6 justify-between">
+
+            <div class="flex ">
+              <img src="https://avatars.githubusercontent.com/u/124515121?v=4&size=64" class="h-10 rounded-full" alt="">
+              <div class="flex flex-col">
+                <span class="font-bold">Parth Mishra</span>
+                <span>@Owner</span>
+              </div>
+
+            </div>
+
+
+            <input type="button" class="  bg-white text-black font-bold rounded-3xl pl-4 pr-4 pt-2 pb-2" value="Follow">
+
+
+          </li>
+
+          
+          <li class="flex items-center gap-3 mr-4 text-base mt-6 justify-between">
+
+            <div class="flex ">
+              <img src="https://avatars.githubusercontent.com/u/124515121?v=4&size=64" class="h-10 rounded-full" alt="">
+              <div class="flex flex-col">
+                <span class="font-bold">Parth Mishra</span>
+                <span>@Owner</span>
+              </div>
+
+            </div>
+
+
+            <input type="button" class="  bg-white text-black font-bold rounded-3xl pl-4 pr-4 pt-2 pb-2" value="Follow">
+
+
+          </li>
+        </div>
+        <!-- footer -->
+        <div class="ml-5 w-full sticky top-[55vh]">
+          <ul class="grid text-slate-500 grid-cols-3 text-xs mt-5">
+
+            <li> Terms of Service </li>
+            <li>Privacy Policy
+            </li>
+            <li>Cookie Policy
+            </li>
+
+          </ul>
+          <ul class="grid text-slate-500 grid-cols-3 text-sm">
+
+            <li>Accessibility
+            </li>
+            <li>Ads info
+            </li>
+            <li>More...
+            </li>
+            <li class="text-wrap">©2024 X Corp.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+  </div>
+</body>
+
+</html>
